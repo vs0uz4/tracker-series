@@ -7,11 +7,13 @@ const api = axios.create({
 export const loadGenres = () => api.get('genres')
 export const saveSerie = newSerie => api.post('series', newSerie)
 export const loadSeriesByGenre = genre => api.get(`series?genre=${genre}`)
+export const deleteSerie = id => api.delete(`series/${id}`)
 
 const apis = {
   loadGenres: loadGenres,
+  loadSeriesByGenre: loadSeriesByGenre,
   saveSerie: saveSerie,
-  loadSeriesByGenre: loadSeriesByGenre
+  deleteSerie: deleteSerie
 }
 
 export default apis
