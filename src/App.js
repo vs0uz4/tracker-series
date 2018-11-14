@@ -1,82 +1,64 @@
 import React, { Component } from 'react'
-import api from './Api'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+
+import Home from './Home'
+import Series from './Series'
+import NewSerie from './NewSerie'
+import EditSerie from './EditSerie'
+
+const About = () => (
+  <section id="about" className="about-section">
+    <div className="container">
+      <h1>Sobre</h1>
+    </div>
+  </section>
+)
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      genres: [],
-      isLoading: false
-    }
-  }
-
-  componentDidMount() {
-    this.setState({ isLoading: true })
-    api.loadGenres().then(res => {
-      this.setState({
-        isLoading: false,
-        genres: res.data
-      })
-    })
-  }
-
-  renderGenreLink(genre) {
-    return (
-      <span>
-        &nbsp;
-        <a href="">{genre}</a>
-        &nbsp;
-      </span>
-    )
-  }
-
   render() {
     return (
-      <div>
-        <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div className="container">
-            <div className="navbar-header page-scroll">
-              <a className="navbar-brand page-scroll" href="#page-top">
-                <img src="images/logo_text.png" height="40" alt="icon" />
-              </a>
-            </div>
-
-            <div className="collapse navbar-collapse navbar-ex1-collapse">
-              <ul className="nav navbar-nav">
-                <li>
-                  <a href="">Menu item</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-        <div className="container-fluid">
-          <section id="intro" className="intro-section">
+      <Router>
+        <div>
+          <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
             <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <h1>
-                    <img src="images/logo_full.png" alt="logo" />
-                  </h1>
-                  <p>Nunca mais esqueça uma série que você assistiu ou que alguém lhe indicou.</p>
-                </div>
+              <div className="navbar-header page-scroll">
+                <a className="navbar-brand page-scroll" href="/">
+                  <img src="/images/logo_text.png" height="40" alt="icon" />
+                </a>
+              </div>
+
+              <div className="collapse navbar-collapse navbar-ex1-collapse">
+                <ul className="nav navbar-nav">
+                  <li>
+                    <Link to="/">
+                      <i className="fas fa-home fa-fw" />
+                      Início
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/new-serie">
+                      <i className="fas fa-plus fa-fw" />
+                      Nova Série
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/about">
+                      <i className="fas fa-info fa-fw" />
+                      Sobre
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
-          </section>
+          </nav>
 
-          <section id="genres">
-            {this.state.isLoading && <span>Aguarde, carregando...</span>}
-            {!this.state.isLoading && (
-              <div>
-                Ver Séries do Gênero:
-                {this.state.genres.map(this.renderGenreLink)}
-              </div>
-            )}
-          </section>
+          <Route exact path="/" component={Home} />
+          <Route path="/series/:genre" component={Series} />
+          <Route exact path="/new-serie" component={NewSerie} />
+          <Route path="/edit-serie/:id" component={EditSerie} />
+          <Route exact path="/about" component={About} />
         </div>
-      </div>
+      </Router>
     )
   }
 }
