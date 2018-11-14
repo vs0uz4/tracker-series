@@ -52,3 +52,21 @@ Para saber mais detalhes, leia a seção [deployment](https://facebook.github.io
 Você poderá saber mais lendo [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 Para aprender mais sobre React, dê uma lida na documentação [React documentation](https://reactjs.org/).
+
+## Telas da Aplicação
+
+### Inicial
+
+<img src="https://raw.githubusercontent.com/vs0uz4/tracker-series/master/.screenshots/home.webp" width="320">
+
+### Listagem de Série por Gênero
+
+<img src="https://raw.githubusercontent.com/vs0uz4/tracker-series/master/.screenshots/seriesByGenre.webp" width="320">
+
+### Nova Série
+
+<img src="https://raw.githubusercontent.com/vs0uz4/vs0uz4/tracker-series/master/.screenshots/new.webp" width="320">
+
+### Sobre
+
+<img src="https://raw.githubusercontent.com/vs0uz4/tracker-series/master/.screenshots/about.webp" width="320">
