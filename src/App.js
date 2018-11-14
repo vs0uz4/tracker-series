@@ -5,14 +5,7 @@ import Home from './Home'
 import Series from './Series'
 import NewSerie from './NewSerie'
 import EditSerie from './EditSerie'
-
-const About = () => (
-  <section id="about" className="about-section">
-    <div className="container">
-      <h1>Sobre</h1>
-    </div>
-  </section>
-)
+import About from './About'
 
 class App extends Component {
   render() {
