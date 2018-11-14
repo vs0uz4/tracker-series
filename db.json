@@ -1,43 +1,11 @@
 {
   "series": [
     {
-      "id": 2,
-      "name": "Friends",
-      "status": "watching",
-      "genre": "Comédia",
-      "current": {
-        "episode": "01",
-        "season": "09"
-      },
-      "comments": "Bom para descontrair"
-    },
-    {
-      "id": 3,
-      "name": "Breaking Bad",
-      "status": "watched",
-      "genre": "Drama",
-      "comments": "Say My Name - melhor cena"
-    },
-    {
-      "id": 4,
-      "name": "Better Call Saul",
-      "status": "toWatch",
-      "genre": "Drama",
-      "comments": "Galera fala bem"
-    },
-    {
       "name": "Desencanto",
       "status": "toWatch",
       "genre": "Comédia",
       "comments": "Trabalhando após ser banida do castelo, Bean não para em nenhum emprego. Elfo encontra um bizarro casal de irmãos vivendo em uma casa feita de doces.",
       "id": 5
-    },
-    {
-      "name": "Hannah Montana",
-      "status": "toWatch",
-      "genre": "Comédia",
-      "comments": "Essa série de sucesso acompanha a vida da estrela pop Hannah Montana, que se disfarça na pele da adolescente comum Miley Stewart durante o dia.",
-      "id": 6
     },
     {
       "name": "Jane the Virgin",
@@ -47,11 +15,11 @@
       "id": 7
     },
     {
+      "id": 8,
       "name": "Friends",
       "status": "toWatch",
       "genre": "Comédia",
-      "comments": "Esta série de enorme sucesso acompanha as aventuras de seis amigos que enfrentam as armadilhas da vida, do trabalho e do amor nos anos 1990.",
-      "id": 8
+      "comments": "Esta série de enorme sucesso acompanha as aventuras de seis amigos que enfrentam as armadilhas da vida, do trabalho e do amor nos anos 1990."
     },
     {
       "name": "Lucifer",
@@ -82,11 +50,15 @@
       "id": 12
     },
     {
+      "id": 13,
       "name": "Breaking Bad",
       "status": "watched",
       "genre": "Drama",
-      "comments": "Walt e Jesse tentam se ajustar à vida longe do tráfico e Hank descobre uma pista perturbadora.",
-      "id": 13
+      "current": {
+        "episode": "05",
+        "season": "10"
+      },
+      "comments": "Walt e Jesse tentam se ajustar à vida longe do tráfico e Hank descobre uma pista perturbadora."
     },
     {
       "name": "Maldição da Residencia Hill",
@@ -110,39 +82,39 @@
       "id": 16
     },
     {
-      "name": "Punho de Ferro",
-      "status": "toWatch",
-      "genre": "Ação",
-      "comments": "Em meio à guerra de gangues pelo controle de Nova York, Danny e Colleen encontram um velho conhecido. Joy embarca em uma nova aventura.",
-      "id": 17
-    },
-    {
+      "id": 18,
       "name": "The Flash",
-      "status": "toWatch",
+      "status": "watching",
       "genre": "Ação",
-      "comments": "Um perito forense desperta de um coma com poderes especiais que serão postos à prova na luta contra forças que ameaçam a cidade.",
-      "id": 18
+      "comments": "Um perito forense desperta de um coma com poderes especiais que serão postos à prova na luta contra forças que ameaçam a cidade."
     },
     {
+      "id": 19,
       "name": "Justiceiro",
-      "status": "toWatch",
+      "status": "watching",
       "genre": "Ação",
-      "comments": "O ex-fuzileiro Frank Castle decide fazer justiça com as próprias mãos enquanto luta para superar seu passado trágico.",
-      "id": 19
+      "comments": "O ex-fuzileiro Frank Castle decide fazer justiça com as próprias mãos enquanto luta para superar seu passado trágico."
     },
     {
+      "id": 20,
       "name": "Demolidor",
-      "status": "toWatch",
+      "status": "watching",
       "genre": "Ação",
-      "comments": "O lado vigilante de Murdock e seu trabalho como advogado são desafiados em um caso de homicídio que implica uma organização criminosa.",
-      "id": 20
+      "comments": "O lado vigilante de Murdock e seu trabalho como advogado são desafiados em um caso de homicídio que implica uma organização criminosa."
     },
     {
+      "id": 21,
       "name": "Inumanos",
       "status": "toWatch",
       "genre": "Ação",
-      "comments": "Após um golpe militar na cidade secreta de Attilan, uma família real de super-humanos liderada pelo Raio Negro é obrigada a se refugiar na Terra.",
-      "id": 21
+      "comments": "Após um golpe militar na cidade secreta de Attilan, uma família real de super-humanos liderada pelo Raio Negro é obrigada a se refugiar na Terra."
+    },
+    {
+      "name": "Desventuras em Série",
+      "status": "watching",
+      "genre": "Comédia",
+      "comments": "No colégio interno, os Baudelaires conhecem misteriosos irmãos com a vida quase tão trágica quanto a deles.",
+      "id": 22
     }
   ],
   "genres": [
