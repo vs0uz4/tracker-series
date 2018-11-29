@@ -70,3 +70,11 @@ Para aprender mais sobre React, dê uma lida na documentação [React documentat
 ### Sobre
 
 <img src="https://raw.githubusercontent.com/vs0uz4/tracker-series/master/.screenshots/about.webp" width="320">
+
+## Informações importantes:
+
+Este projeto foi desenvolvido com base no conhecimento adquirido no **ReactJS - Minicurso Gratuito** (Minhas Séries) promovido pelo **DevPleno** (www.devpleno.com).
+
+**Participante:** Vitor de Souza Rodrigues
+
+O minicurso não contou com certificado.
